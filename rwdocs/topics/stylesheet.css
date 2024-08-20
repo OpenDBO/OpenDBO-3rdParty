@@ -1,0 +1,910 @@
+body
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	width: 100%;
+	}
+
+div#head
+	{
+	position: relative;
+	left: 0px;
+	padding: 0px 0px 0px 4px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	font-weight: normal;
+	}
+
+div#body
+	{
+	width: 100%; /* Forces tables to have correct right margin */*/
+	padding: 0px 10px 0px 22px;
+	margin-bottom: 0px;
+	position: relative;
+	}
+
+div#foot
+	{
+	width: 100%; /* Forces tables to have correct right margin */
+	padding: 0px 0px 10px 0px;
+	margin-right: 0px;
+	clear: both;
+	}
+
+div.table
+	{
+	width: 100%; /* Works around IE bug: forces tables to have correct right margin */
+	}
+
+div	{
+	font-size: 100%;
+	}
+
+div.fragment 
+   	{
+	background-color: #eeeeee;
+	width: 100%;
+	}
+
+/* Text styles */
+
+p, fieldset
+	{
+	}
+
+p.subject
+	{
+	padding-top: 4px;
+	padding-bottom: 0px;
+	font-style: italic;
+	}
+
+p.headexpand, p.head
+	{
+	margin-left: -18px;
+	margin-top: 1em;
+	}
+
+p.headexpand
+	{
+	behavior: url(behaviors/expand.htc);
+	cursor: hand;
+	}
+
+fieldset
+	{
+	padding-bottom: 0.5em;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-width: 1px;
+	border-style: solid;
+	}
+
+legend
+	{
+	font-weight: bold;
+	padding-bottom: 4px;
+	}
+
+.normal
+	{
+	font-weight: normal;
+	}
+
+.seealso, a.seealsolink, span.note, span.caution, span.property, span.method, span.object, span.event, p.headexpand, p.head
+	{
+	font-weight: bold;
+	font-style: normal;
+	}
+
+a.feedback
+	{
+	font-family: Wingdings;
+	font-size: 160%;
+	}
+
+a.seealsolink:hover, p.headexpand:hover
+	{
+	text-decoration: underline;
+	}
+
+span.key
+	{
+ 	padding: 0px 2px 0px 2px;
+	border-style: solid;
+	border-width: 1px;
+	cursor: default;
+	}
+
+span.button
+	{
+ 	padding: 0px 2px 0px 2px;
+	border-style: solid;
+	border-width: 1px;
+	font-weight: bold;
+	}
+
+/* Icons used by togglecaption.htc and scrollcaption.htc */
+span.iconcollapse
+	{
+	border-style: solid;
+	border-width: 1px;
+	padding: 1px 2px 1px 2px;
+	font-size: 13px;
+	position: relative;
+	top: 2px;
+	height: 13px;
+	line-height: 9px;
+	text-decoration: none;
+	}
+
+span.iconexpand
+	{
+	border-style: solid;
+	border-width: 1px;
+	padding: 1px;
+	font-size: 13px;
+	position: relative;
+	top: 2px;
+	height: 13px;
+	line-height: 9px;
+	text-decoration: none;
+	}
+
+/* Icons used by EnterpriseControl.htc */
+span.iconplay
+	{
+	font-family: Arial;
+	border-style: solid;
+	border-width: 1px;
+	padding: 0px;
+	font-size: 11px;
+	position: relative;
+	top: 2px;
+	height: 13px;
+	line-height: 11px;
+	text-decoration: none;
+	cursor: hand;
+	}
+
+span.iconstop
+	{
+	font-family: Arial;
+	border-style: solid;
+	border-width: 1px;
+	padding: 2px 1px 0px 1px;
+	font-size: 15px;
+	position: relative;
+	top: 2px;
+	height: 13px;
+	line-height: 9px;
+	text-decoration: none;
+	cursor: hand;
+	}
+
+span.iconcollapse,
+span.iconexpand,
+span.iconplay,
+span.iconstop
+	{
+	behavior: url(behaviors/hilite.htc);
+	}
+
+
+/* Cover page style (print only) */
+
+p.coverproduct
+	{
+	text-align: right;
+	font-family: Verdana;
+	font-size: 14pt;
+	font-weight: bold;
+	padding-top: 20mm;
+	margin-bottom: 0mm;
+	}
+
+p.coverversion
+	{
+	text-align: right;
+	font-family: Verdana;
+	font-size: 14pt; margin-top: 0mm;
+	margin-bottom: 0mm;
+	}
+
+p.covertitle
+	{
+	text-align: right;
+	font-family: Verdana;
+	font-size: 24pt;
+	font-weight: bold;
+	margin-top: 0.5em;
+	}
+
+div.coverimage
+	{
+	height: 150mm;
+	width: 100%;
+	position: absolute;
+	bottom: 0mm;
+	}
+
+
+/* Graphics */
+
+img
+	{
+	border: none; 
+	}
+
+
+/* Background icon (rotated, enlarged) on Enterprise module help topics */
+img.bgicon
+	{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: -1;
+	filter:progid:DXImageTransform.Microsoft.Matrix(sizingMethod="auto expand") progid:DXImageTransform.Microsoft.Alpha(opacity=15);
+	behavior: url(behaviors/bgicon.htc);
+	}
+
+
+/* Lists */
+
+
+ol, ul
+	{
+	margin: .5em 0em 0em 2em; 
+	}
+li
+	{
+	margin-bottom: .5em;
+	}
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+ol ol
+	{
+	list-style: lower-alpha;
+	}
+
+ol ol ol
+	{
+	list-style: lower-roman;
+	}
+
+ul, ul ul, ul ul ul
+	{
+	list-style-type: square;	
+	}
+
+/* Headings */
+
+
+h1, h2, h3, h4, p.subject, p.objectname
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+h1, h2, h3, h4
+	{
+	font-weight: bold;
+	}
+
+h1
+	{
+	text-align: center;
+	font-size: 150%;
+	font-style: normal;
+	x-next-class: body;
+	x-next-type: P;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	}
+
+h2, h3, h4
+	{
+	margin-bottom: .4em; 
+	margin-top: 1em;
+	}
+
+h2
+	{
+	font-size: 130%;
+	}
+
+h3
+	{
+	font-size: 115%;
+	}
+
+h4
+	{
+	font-size: 100%;
+	}
+
+
+/* Definition lists */
+
+
+dl
+	{
+	margin-top: 0em; 
+	padding-left: 1px; /* Prevents italic-letter descenders from being cut off */
+	}
+dd
+	{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+	}
+
+dt
+	{
+	font-weight: bold;
+	margin-top: .5em; 
+	}
+
+
+/* Styles for depicting menus */
+
+
+span.menuheading
+	{
+	color: #FFFFFF;
+	padding: 4px 4px 2px 4px;
+	margin-bottom: 0px;
+	border-style: solid;
+	border-width: 1px;
+	}
+
+p.menuheading
+	{
+	margin-top: 1.5em;
+	margin-bottom: 0px;
+	font-weight: bold;
+	}
+
+hr.menuseparator
+	{
+	height: 1px;
+	margin-top: 0.5em;
+	margin-right: 10px;
+	}
+
+table.menu
+	{
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 2px;
+	margin-bottom: 1.5em;
+	}
+
+table.menu td
+	{
+	padding-left: 8px;
+	padding-right: 8px;
+	}
+
+
+/* Tables */
+
+td.md
+	{
+	background-color: #ccccff;
+	font-weight: bold;
+	cell-padding: 6
+	}
+
+
+table
+	{
+	font-size: 100%; /* Text in table is same size as text outside table */
+	}
+
+th
+	{
+	text-align: left;
+	}
+
+table.pretty
+	{
+	width: 100%; /* Forces tables to have correct right margin */
+	margin-top: .6em;
+	margin-bottom: .3em;
+	border-width: 1px 1px 0px 0px;
+	border-style: solid;
+	border-color: #D1801E; /* 75% */
+	}
+
+table.pretty th, table.pretty td
+	{ 
+	border-style: solid; /* Creates the cell border and color */
+	border-width: 0px 0px 1px 1px;
+	border-style: solid;
+	border-color: #D1801E; /* 75% */
+	padding: 4px 6px;
+	text-align: left;
+	}
+table.pretty th	
+	{ 
+	background: #F5C592; /* 50% */
+	vertical-align: bottom;
+	}
+table.pretty td	
+	{
+	vertical-align: top;
+	}
+
+td.subtopic
+	{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 4px 10px 4px 10px;
+	margin-right: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	behavior: url(behaviors/hilite.htc);
+	}
+
+table.sidebar
+	{
+	border-style: solid;
+	border-width: 1px;
+	margin: 1em;
+	margin-left: 22px;
+	margin-right: 0px;
+	margin-bottom: 1.5em;
+	position: relative;
+	float: right;
+	right: 0px;
+	padding: 0px;
+	}
+
+table.sidebar td
+	{
+	padding-left: 8px;
+	padding-right: 8px;
+	}
+
+table.sidebar th
+	{
+	padding: 4px 8px 4px 8px;
+	color: #FFFFFF;
+	}
+
+
+
+/* Code */
+
+code
+	{
+	text-decoration: none;
+	font-weight: normal;
+	color: #000000;
+	}
+
+pre, img.figure
+	{
+	margin-top: .5em;
+	margin-bottom: .5em;
+	}
+
+pre, code, kbd, div.code
+	{
+	font-family: Courier New, Courier, Monospace;
+	}
+
+pre.code
+	{
+	behavior: url(behaviors/code.htc);
+	}
+
+.hide
+	{
+	display: none;
+	}
+
+
+/* Miscellaneous behaviors */
+
+/* Add "Notes:" paragraph before list */
+ul.note
+	{
+	behavior: url(behaviors/notelist.htc);
+	}
+
+
+/* Convert div.menu into table.menu */
+div.menu
+	{
+	behavior: url(behaviors/menu.htc);
+	}
+
+/* Hilite text on mouse rollover */
+span.rollover
+	{
+	behavior: url(behaviors/hilite.htc);	
+	}
+
+/* Convert name attribute into p.objectname */
+h1
+	{
+	behavior: url(behaviors/objectname.htc);
+	}
+
+/* Expand/contract next element; hilite on rollover */
+.expand
+	{
+	behavior: url(behaviors/expand.htc) url(behaviors/hilite.htc);
+	}
+
+ol.imglist
+	{
+	behavior: url(behaviors/imglist.htc);
+	}
+
+tool\:tip
+	{
+	behavior: url(behaviors/tooltip_js.htc);
+	padding: 4px 8px 4px 8px;
+	background: #f0fff0;
+	border: 1px solid #999999;
+	}
+
+enterprise\:control
+	{
+	behavior: url(behaviors/EnterpriseControl.htc);
+	}
+
+span.tip
+	{
+	behavior: url(behaviors/hilite.htc);
+	text-decoration: underline;
+	cursor: hand;
+	}
+
+span.symbol
+	{
+	behavior: url(behaviors/symbols.htc);
+	cursor: default;
+	}
+
+p.note
+	{
+	behavior: url(behaviors/note.htc);
+	}
+
+p.tip
+	{
+	behavior: url(behaviors/tip.htc);
+	}
+
+p.bug
+	{
+	behavior: url(behaviors/bug.htc);
+	font-style: italic;
+	}
+
+p.caution
+	{
+	behavior: url(behaviors/caution.htc);
+	}
+
+/* Display one or more module icons */
+img.module
+	{
+	display: none;
+	behavior: url(behaviors/module.htc);
+	}
+
+div.eval, span.eval
+	{
+	display: none;
+	behavior: url(behaviors/eval.htc);
+	}
+
+/* Place contents inside a table, so that it does not expand to 100% width */
+.autowidth
+	{
+	behavior: url(behaviors/autowidth.htc);
+	}
+
+img.attach
+	{
+	behavior: url(behaviors/attach.htc);
+	}
+
+p.author
+	{
+	behavior: url(behaviors/author.htc);
+	}
+
+
+/* Screen-specific styles */
+
+
+/* Leave links without underline for printing */
+@media screen
+{
+a, .expand
+	{
+	cursor: hand;
+	text-decoration: underline;
+	}
+
+.printonly, #printonly, br.page
+	{
+	display: none;
+	}
+
+/* Expand monospaced fonts slightly on-screen */
+pre, code, kbd, div.code
+	{
+	font-size: 105%;
+	}
+}
+
+
+/* Print-specific styles */
+
+
+@media print
+{
+body
+	{
+	font-family: "Bookman Old Style", "Palatino Linotype", "Times New Roman", serif;
+	font-size: 11pt;
+	}
+
+span.iconlabel
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}
+
+.screenonly, #screenonly
+	{
+	display: none;
+	}
+
+div#body
+	{
+	padding-left: 20mm;
+	}
+
+/* When printing, apply the border to the <h1> */
+div#head
+	{
+	border: none;
+	margin-bottom: 10mm;
+	}
+
+h1	{
+	font-size: 140%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding-bottom: 2mm;
+	}
+
+a, .expand
+	{
+	text-decoration: none;
+	}
+
+br.page
+	{
+	page-break-after: always;
+	}
+
+}
+
+/* Styles used by behaviors or other script: not intended for authoring */
+
+
+/* Object names, added after h1 by objectname.htc for certain topics.  See h1 rules. */
+span.objectname
+	{
+	font-weight: normal;
+	cursor: default;
+	}
+
+/* code.htc behavior converts pre.code into a table.code that contains a div.code */
+table.code
+	{
+	margin: .5em 0em .5em 0em;
+	}
+
+div.code
+	{
+	padding: 4px 8px;
+	border: none;
+	border-width: 3px;
+	border-style: inset;
+	white-space: pre;
+	}
+
+span.error
+	{
+	behavior: url(behaviors/error.htc);
+	}
+
+/* Toggle styles used by expand.htc */
+.toggle
+	{
+	display: none;
+	behavior: url(behaviors/toggle.htc);
+	}
+
+p.togglecaption
+	{
+	behavior: url(behaviors/expand.htc) url(behaviors/togglecaption.htc) url(behaviors/hilite.htc);
+	margin-left: -17px;
+	cursor: hand;
+	}
+
+td.togglecode
+	{
+	behavior: url(behaviors/togglecode.htc);
+	cursor: hand;
+	width: 17px;
+	}
+
+a.seealsolink, a.feedback
+	{
+	text-decoration: none;
+	}
+
+.copyright
+	{
+	font-style: italic;
+	}
+
+/* RealiMation colors, based on RealiMation logo (CorelDRAW "Light Orange": C 0%, M 40%, Y 80%, K 0%) */
+/*	color: #EF9B49; /* 100% */
+
+body, div.code
+	{
+	background: #ffffff; 
+	color: #000000;
+	}
+
+a:visited
+	{
+	color: #0000ff;
+	}
+
+/* If you change this, then also change color in hilite.htc */
+a, a:hover, a.feedback, a.feedback:visited,
+.seealso, a.seealsolink, a.seealsolink:visited,
+td.subtopic,
+span.iconcollapse, span.iconexpand,
+span.iconplay, span.iconstop,
+hr.menuseparator
+	{
+	color: #0000ff;
+	}
+
+.comment
+	{
+	color: #009900;
+	}
+
+
+/* Leave links black for printing */
+@media print
+{	
+a, a:visited
+	{
+	color: #000000;
+	}
+}
+
+.keyword
+	{
+	color: #0000FF;
+	}
+
+.subhead
+	{
+	color: #B9761E;
+	}
+
+span.caution
+	{
+	color: #990000;
+	}
+
+.key
+	{
+	background: #ffffee;
+	border-color: #999999;
+	}
+
+.button
+	{
+	background: #eeeeee;
+	border-color: #666666;
+	}
+
+.hilite, a.feedback:hover
+	{
+	color: #F2AE6F; /* 75% */
+	}
+
+span.iconcollapse, span.iconexpand, span.iconplay, span.iconstop, table.menu, span.menuheading
+	{
+	border-color: #D1801E; /* 110% */
+	}
+
+td.subtopic
+	{
+	border-bottom-color: #EF9B49;
+	border-left-color: #EF9B49;
+	border-right-color: #EF9B49;
+	}
+
+span.iconcollapse, span.iconexpand, span.iconplay, span.iconstop, td.subtopic, span.shade, table.menu
+	{
+	background-color: #FDF0DD; /* 10% */
+	}
+
+span.rollover
+	{
+	color: #000000;
+	}
+
+/* table.menu is what a div.menu becomes after the menu.htc behavior */
+table.sidebar, table.menu
+	{
+	background-color: #FDF0DD; /* 10% */
+	border-color: #D1801E; /* 110% */
+	}
+
+span.menuheading, table.sidebar th
+	{
+	background-color: #D1801E; /* 75% */
+	}
+
+/* Only colorize these elements on-screen; leave them default (black, or none) for printing */
+@media screen
+{
+div#head
+	{
+/*	border-bottom-color: #D1801E; /* 110 % */
+/*	background-color: #F2AE6F; /* 75% */
+	border-bottom-color: #D1801E;
+	background-color: #CCCCCC;
+	}
+
+fieldset
+	{
+	border-color: #D1801E; /* 110% */
+	}
+
+p.headexpand, legend, span.note
+	{
+	color: #D1801E; /* "110%" tint: 100% + 10% black */
+	}
+
+var
+	{
+	color: #D1801E; /* "110%" */
+	}
+}
+
+
+/* Hide Author and Bug paragraphs in pre-release drafts
+p.author,
+p.bug
+	{
+	display: none;
+	} */
